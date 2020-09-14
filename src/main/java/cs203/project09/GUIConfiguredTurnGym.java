@@ -65,10 +65,10 @@ public class GUIConfiguredTurnGym extends GUIConfiguredGym{
 		app.frame = new JFrame();
 		app.createVSPanel();
 		app.createAndAddFightButton();
-		app.frame.setLocationRelativeTo(null);
-		app.frame.setVisible(true);
 		app.setImageLeft(omanA);
 		app.setImageRight(omanB);
+		app.frame.setLocationRelativeTo(null);
+		app.frame.setVisible(true);
 		if (omanA.isFainted()){
 			JOptionPane.showMessageDialog(null,omanA.getName() + " fainted! Moving to next turn!");
 			if(getTeamA().nextObjectmon()==null){

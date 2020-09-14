@@ -76,8 +76,6 @@ public class ObjectmonView extends AbstractObjectmonView{
 	}
 
 	public ImageIcon getImageIcon() throws Exception {
-		//System.out.println(((String)hashMap.get(getName())) + "!!!!!!!!!!!!!!!!!!");
-		//System.out.println("dooooooooooooot");
 		java.net.URL imageURL = getClass().getResource(((String)hashMap.get(getName())));
 		//java.net.URL imageURL = getClass().getResource("abra.png");
 		if (imageURL != null) {
